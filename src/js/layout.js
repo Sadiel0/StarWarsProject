@@ -5,10 +5,17 @@ import ScrollToTop from "./component/scrollToTop";
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
+import { Planet } from "./views/Planet";
+import { Planets } from "./views/Planets";
+import { Vehicles } from "./views/Vehicles";
+
+import { Character } from "./views/Character";
+import { Characters } from "./views/Characters";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { Vehicle } from "./views/Vehicle";
 
 //create your first component
 const Layout = () => {
@@ -25,11 +32,23 @@ const Layout = () => {
 						<Route exact path="/">
 							<Home />
 						</Route>
-						<Route exact path="/demo">
-							<Demo />
+						<Route exact path="/vehicles/:id">
+							<Vehicle />
 						</Route>
-						<Route exact path="/single/:theid">
-							<Single />
+						<Route exact path="/vehicles/">
+							<Vehicles />
+						</Route>
+						<Route path="/people/:id/:name">
+							<Character />
+						</Route>
+						<Route exact path="/people">
+							<Characters />
+						</Route>
+						<Route exact path="/planet/:id">
+							<Planet />
+						</Route>
+						<Route exact path="/planets">
+							<Planets />
 						</Route>
 						<Route>
 							<h1>Not found!</h1>

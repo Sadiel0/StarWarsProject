@@ -1,3 +1,62 @@
-/* 
-    General Styles
-*/
+
+.row{
+  padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  h1 {
+      
+    display: flex;
+    justify-content: flex-start;
+    color:white;
+    text-decoration: underline;
+    font-family: sans-serif;
+    }
+  .card {
+    background: transparent;
+    color: white;
+      width: 18rem;
+      margin: 10px;
+      margin-left: 15px;
+  }
+    .card img {
+    border-radius: 50%;
+    object-fit: cover;
+    width:230px;
+    height:230px;
+  }
+  .card img:hover {
+      box-shadow: 0px 0px 30px 30px blue;
+      width: 250px;
+      height: 230px;
+    border-radius: 50%;
+    transition: all 1s ease;
+    transition: 1s ease-out ;
+  }
+
+  button {
+    background-color: #D6E109;
+   
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    height: 40px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    transition: border-width 0.6s linear;
+  }
+  button:hover {
+      color:#929380;
+      height: 45px;
+      border: 2px solid black;
+      border-width: 7px; 
+      }
+  button i {
+      margin-left: 10px;
+  }
+
