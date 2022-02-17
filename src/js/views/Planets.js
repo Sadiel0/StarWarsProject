@@ -2,7 +2,7 @@ import React from "react";
 import useSWR from "swr";
 import { Planet } from "../views/Planet";
 import { useFavorites } from "../store/favorite";
-import "../../styles/index.scss";
+import "../../styles/index.css";
 export async function starWarsApiFetch(path) {
 	const response = await fetch("https://www.swapi.tech" + path);
 	if (response.status === 200) {

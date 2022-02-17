@@ -3,7 +3,7 @@ import useSWR from "swr";
 import { starWarsApiFetch } from "./Planets";
 import { Vehicle } from "../views/Vehicle";
 import { useFavorites } from "../store/favorite";
-import "../../styles/index.scss";
+// import "../../styles/index.scss";
 
 export function Vehicles() {
 	const { data, isValidating } = useSWR("/api/vehicles/", starWarsApiFetch);

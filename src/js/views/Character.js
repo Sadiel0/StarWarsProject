@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import "../../styles/character.css"
 import useSWR from "swr";
 import { starWarsApiFetch } from "./Planets";
-import "../../styles/character.scss";
+
+		
 export function Character() {
 	const params = useParams();
 	console.log(params);

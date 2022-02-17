@@ -2,8 +2,8 @@ import React from "react";
 import useSWR from "swr";
 import { starWarsApiFetch } from "./Planets";
 import { useParams } from "react-router-dom";
-import "../../styles/index.scss";
-import { Character } from "./Character";
+import "../../styles/index.css";
+// import { Character } from "./Character";
 import { useFavorites } from "../store/favorite";
 
 export function Characters() {
